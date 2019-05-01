@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/user_Profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/user_favorite"
+            android:icon="@drawable/ic_favorite"
+            android:title="Favorite Items" />
+
+        <item
+            android:id="@+id/user_login"
+            android:icon="@drawable/ic_login"
+            android:title="Login"
+            />
+
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Communicate">
+
+            <menu>
+
+                <item
+                    android:id="@+id/share"
+                    android:icon="@drawable/ic_share"
+                    android:title="Share" />
+            </menu>
+
+
+        </item>
+    </group>
+
+
+</menu>
