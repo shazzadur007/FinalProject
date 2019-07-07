@@ -25,7 +25,6 @@ public class CategoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_category, container, false);
         NestedScrollView scrollView = (NestedScrollView)view.findViewById (R.id.nest_scrollview);

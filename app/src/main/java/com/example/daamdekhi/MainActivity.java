@@ -39,7 +39,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private PlaceholderFragment placeholderFragment;
     MaterialSearchView searchView;
 
-
+    public static String[][] products = new String[][]{
+            {"Rice in Dhaka", "Small desc", "100", "image.jpg"},
+            {"Rice in Chittagong", "Small desc", "100", "image.jpg"},
+            {"Rice in Comilla", "Small desc", "100", "image.jpg"}
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
