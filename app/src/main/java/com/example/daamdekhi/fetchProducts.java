@@ -1,9 +1,17 @@
 package com.example.daamdekhi;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,10 +41,11 @@ public class fetchProducts extends AsyncTask<Void, Void, Void> {
     private String query = "";
     String[][] products;
     Context cont;
+
     public fetchProducts(Context cont, String query) {
         super();
         this.cont = cont;
-        if(query == null) {
+        if (query == null) {
             this.query = "";
         } else {
             this.query = query;
@@ -55,23 +64,24 @@ public class fetchProducts extends AsyncTask<Void, Void, Void> {
             int status = httpURLConnection.getResponseCode();
             if (status == HttpURLConnection.HTTP_OK) {
                 inputStream = httpURLConnection.getInputStream();
-                BufferedReader bufferedReader = new BufferedReader( new InputStreamReader(inputStream));
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
                 String line = "";
-                while ( (line = bufferedReader.readLine()) != null ) {
+                while ((line = bufferedReader.readLine()) != null) {
                     data = data + line;
                 }
                 JSONObject D = new JSONObject(data);
                 String s = (String) D.get("message");
 
-                if( s.equals("ok") ) {
+                if (s.equals("ok")) {
                     JSONArray JA = (JSONArray) D.get("products");
                     products = new String[JA.length()][4];
-                    for ( int i = 0; i < JA.length(); i++) {
+                    for (int i = 0; i < JA.length(); i++) {
                         JSONObject JO = (JSONObject) JA.get(i);
                         products[i][0] = (String) JO.get("name");
                         products[i][1] = (String) JO.get("price");
                         products[i][2] = (String) JO.get("desc");
                         products[i][3] = (String) JO.get("meta");
+                        distance(32.9697, -96.80322, 29.46786, -98.53506, 'M');
                     };
                 }
             } else {
@@ -124,5 +134,26 @@ public class fetchProducts extends AsyncTask<Void, Void, Void> {
                 cont.startActivity(intent);
             }
         });
+    }
+
+
+    private double distance(double lat1, double lon1, double lat2, double lon2, char unit) {
+        double theta = lon1 - lon2;
+        double dist = Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat2)) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.cos(deg2rad(theta));
+        dist = Math.acos(dist);
+        dist = rad2deg(dist);
+        dist = dist * 60 * 1.1515;
+        if (unit == 'K') {
+            dist = dist * 1.609344;
+        } else if (unit == 'N') {
+            dist = dist * 0.8684;
+        }
+        return (dist);
+    }
+    private double deg2rad(double deg) {
+        return (deg * Math.PI / 180.0);
+    }
+    private double rad2deg(double rad) {
+        return (rad * 180.0 / Math.PI);
     }
 }
