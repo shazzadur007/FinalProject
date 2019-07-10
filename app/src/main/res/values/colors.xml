@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="daamdekhi">#F58900</color>
+    <color name="daamdekhishadow">#FCECDA</color>
     <color name="colorPrimary">#F58900</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>

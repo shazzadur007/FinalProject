@@ -1,6 +1,7 @@
 package com.example.daamdekhi;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -166,7 +167,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment=new LoginFragment();
                 break;
             case R.id.share:
-                Toast.makeText(this,"Share",Toast.LENGTH_SHORT).show();
+                Intent sharingIntent=new Intent(Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+                String shareBody= "Get More Exciting Product. Visit https://daamdekhi.com/ \n App Download link:";
+                String shareSubject="App Download link: ";
+                sharingIntent.putExtra(Intent.EXTRA_SUBJECT,shareSubject);
+                sharingIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
+
+                startActivity(Intent.createChooser(sharingIntent,"Share With"));
+                //Toast.makeText(this,"Share",Toast.LENGTH_SHORT).show();
                 break;
         }
         if (fragment!=null){
