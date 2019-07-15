@@ -22,21 +22,11 @@ public class MoreFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_more,container,false);
+        
 
 
-        //return inflater.inflate(R.layout.fragment_more, container, false);
-        Button enlisted_shop=(Button)view.findViewById(R.id.EnlistedShop);
-
-        enlisted_shop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fr= getFragmentManager().beginTransaction();
-                fr.replace(R.id.main_frame, new Enlisted_Shop());
-                fr.commit();
-            }
-        });
-        return view;
+        return inflater.inflate(R.layout.fragment_more, container, false);
+     
     }
 
 
