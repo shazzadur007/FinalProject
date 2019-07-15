@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private CategoryFragment categoryFragment;
     private MoreFragment moreFragment;
     private PlaceholderFragment placeholderFragment;
-    private Enlisted_Shop enlisted_shop;
+
     MaterialSearchView searchView;
 
     public static String[][] products = new String[][]{
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         moreFragment = new MoreFragment();
         homeFragment = new HomeFragment();
         placeholderFragment = new PlaceholderFragment();
-        enlisted_shop=new Enlisted_Shop();
+        
 
 
         NavigationView navigationView=findViewById(R.id.naView);
