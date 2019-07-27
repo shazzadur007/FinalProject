@@ -15,20 +15,24 @@ import android.widget.GridView;
 
 public class MoreFragment extends Fragment {
 
-    private Button button;
-
-
-
-
-
-
+    private Button enlisted_shop;
+    private Button suggested_shop;
+    private Button like_facebook;
+    private Button foll0w_insta;
+    private Button about_us;
+    private Button rate_us;
+    private Button terms_condition;
+    private Button privacy_policy;
+    private Button logout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_more, container, false);
-        button=view.findViewById(R.id.EnlistedShop);
-        button.setOnClickListener(new View.OnClickListener() {
+
+
+        enlisted_shop=view.findViewById(R.id.EnlistedShop);
+        enlisted_shop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),EnlistedShop.class);
@@ -36,6 +40,17 @@ public class MoreFragment extends Fragment {
 
             }
         });
+
+        suggested_shop=view.findViewById(R.id.SuggestedShop);
+        suggested_shop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(),SuggestedShop.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
         return view;

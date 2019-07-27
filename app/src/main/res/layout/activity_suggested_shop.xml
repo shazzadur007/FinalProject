@@ -5,24 +5,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnlistedShop"
-    >
+    tools:context=".SuggestedShop">
+
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar"
-        />
-
+        layout="@layout/toolbar" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="103dp"
-        android:layout_marginLeft="103dp"
-        android:layout_marginTop="308dp"
-        android:text="Enlisted Shop"
+        android:layout_marginStart="93dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="269dp"
+        android:text="Suggest A shop"
         android:textSize="34sp" />
 
 

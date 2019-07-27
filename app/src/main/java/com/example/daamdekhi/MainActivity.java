@@ -128,7 +128,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             }
         });
-
     }
 
     public boolean onCreateOptionsMenu (Menu menu) {
@@ -175,9 +174,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 String shareSubject="App Download link: ";
                 sharingIntent.putExtra(Intent.EXTRA_SUBJECT,shareSubject);
                 sharingIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
-
                 startActivity(Intent.createChooser(sharingIntent,"Share With"));
-                //Toast.makeText(this,"Share",Toast.LENGTH_SHORT).show();
                 break;
         }
         if (fragment!=null){
