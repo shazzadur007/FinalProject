@@ -30,26 +30,20 @@ public class CategoryFragment extends Fragment {
         NestedScrollView scrollView = (NestedScrollView)view.findViewById (R.id.nest_scrollview);
         scrollView.setFillViewport (true);
         lstproduct= new ArrayList<>();
-        lstproduct.add(new product("Art","Categorie Book","Description Book",R.drawable.art));
-        lstproduct.add(new product("Doutch","Categorie Book","Description Book",R.drawable.doutch));
-        lstproduct.add(new product("KawaSaki","Categorie Book","Description Book",R.drawable.kawasaki));
-        lstproduct.add(new product("Fred","Categorie Book","Description Book",R.drawable.fred));
-        lstproduct.add(new product("Murphy","Categorie Book","Description Book",R.drawable.murphy));
-        lstproduct.add(new product("Sugar","Categorie Book","Description Book",R.drawable.sugar));
+        lstproduct.add(new product("Kid's","Categorie Book","Kid's",R.drawable.kids));
+        lstproduct.add(new product("Women","Categorie Book","Description Book",R.drawable.women));
+        lstproduct.add(new product("Men","Categorie Book","Description Book",R.drawable.men));
+        lstproduct.add(new product("Computer's & Camera's","Categorie Book","Description Book",R.drawable.computers));
+        lstproduct.add(new product("Home Appliance","Categorie Book","Description Book",R.drawable.home));
+        lstproduct.add(new product("Gift","Categorie Book","Description Book",R.drawable.gift));
 
-        lstproduct.add(new product("Art","Categorie Book","Description Book",R.drawable.art));
-        lstproduct.add(new product("Doutch","Categorie Book","Description Book",R.drawable.doutch));
-        lstproduct.add(new product("KawaSaki","Categorie Book","Description Book",R.drawable.kawasaki));
-        lstproduct.add(new product("Fred","Categorie Book","Description Book",R.drawable.fred));
-        lstproduct.add(new product("Murphy","Categorie Book","Description Book",R.drawable.murphy));
-        lstproduct.add(new product("Sugar","Categorie Book","Description Book",R.drawable.sugar));
+        //aro 3 ta category add kora lagbe.wearable, healthcare, security system & fire safety,
 
-        lstproduct.add(new product("Art","Categorie Book","Description Book",R.drawable.art));
-        lstproduct.add(new product("Doutch","Categorie Book","Description Book",R.drawable.doutch));
-        lstproduct.add(new product("KawaSaki","Categorie Book","Description Book",R.drawable.kawasaki));
-        lstproduct.add(new product("Fred","Categorie Book","Description Book",R.drawable.fred));
-        lstproduct.add(new product("Murphy","Categorie Book","Description Book",R.drawable.murphy));
-        lstproduct.add(new product("Sugar","Categorie Book","Description Book",R.drawable.sugar));
+        lstproduct.add(new product("Computer's & Camera's","Categorie Book","Description Book",R.drawable.computers));
+        lstproduct.add(new product("Home Appliance","Categorie Book","Description Book",R.drawable.home));
+        lstproduct.add(new product("Gift","Categorie Book","Description Book",R.drawable.gift));
+
+
 
 
 
