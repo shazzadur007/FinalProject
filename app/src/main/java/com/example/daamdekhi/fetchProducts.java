@@ -27,17 +27,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.net.URL;
 
 public class fetchProducts extends AsyncTask<Void, Void, Void> {
-    private String _name = "";
     private String data = "";
-    private String name = "";
-    private String price = "";
-    private String desc = "";
-    private String meta = "";
-    private String image = "";
-    private Integer rating = null;
     private String query = "";
     String[][] products;
     Context cont;
@@ -55,7 +49,7 @@ public class fetchProducts extends AsyncTask<Void, Void, Void> {
     @Override
     protected Void doInBackground(Void... voids) {
         try {
-            String u = "https://daamdekhi.com/api/product/read.php?id=102";
+            String u = "https://daamdekhi.com/api/product/read.php";
             URL url = new URL(u);
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setRequestMethod("GET");
@@ -74,15 +68,18 @@ public class fetchProducts extends AsyncTask<Void, Void, Void> {
 
                 if (s.equals("ok")) {
                     JSONArray JA = (JSONArray) D.get("products");
-                    products = new String[JA.length()][4];
+                    products = new String[JA.length()][7];
                     for (int i = 0; i < JA.length(); i++) {
                         JSONObject JO = (JSONObject) JA.get(i);
                         products[i][0] = (String) JO.get("name");
                         products[i][1] = (String) JO.get("price");
                         products[i][2] = (String) JO.get("desc");
                         products[i][3] = (String) JO.get("meta");
-                        distance(32.9697, -96.80322, 29.46786, -98.53506, 'M');
-                    };
+                        products[i][4] = (String) JO.get("latitude");
+                        products[i][5] = (String) JO.get("longitude");
+                        products[i][6] = (String) JO.get("sellerId");
+                        distance( Double.parseDouble(products[i][4]), Double.parseDouble(products[i][5]), Double.parseDouble(products[i][4]), Double.parseDouble(products[i][5]), 'K');
+                    }
                 }
             } else {
                 Log.d("ERRORGET", "GET request not worked");

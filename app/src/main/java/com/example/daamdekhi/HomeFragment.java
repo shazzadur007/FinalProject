@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
         Bundle data = getArguments();
 
         searchResultView = v.findViewById(R.id.searchResultView);
-        searchTest = (TextView) v.findViewById(R.id.searchTest);
+        searchTest = v.findViewById(R.id.searchTest);
         if( data == null ) {
             searchTest.setText("");
             fetchProducts process = new fetchProducts(this.cont, null);
