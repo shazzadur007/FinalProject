@@ -50,6 +50,16 @@ public class MoreFragment extends Fragment {
             }
         });
 
+        like_facebook=view.findViewById(R.id.LikeFacebook);
+        like_facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(),FacebookActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
 

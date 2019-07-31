@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/daamdekhi"
     android:elevation="4dp"
+    android:gravity="center"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
     app:titleTextColor="@android:color/white">
 

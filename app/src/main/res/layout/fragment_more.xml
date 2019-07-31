@@ -3,25 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MoreFragment"
-    android:background="@color/daamdekhishadow">
+    android:background="@color/daamdekhishadow"
+    tools:context=".MoreFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="250dp"
-                android:layout_height="166dp"
+                android:layout_width="248dp"
+                android:layout_height="157dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="-33dp"
@@ -29,71 +29,100 @@
                 android:src="@drawable/logo1" />
 
 
-    <Button
-        android:id="@+id/EnlistedShop"
-        android:layout_below="@id/logo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Enlisted Shop"/>
-    <Button
-        android:id="@+id/SuggestedShop"
-        android:layout_below="@id/EnlistedShop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Suggested Shop"/>
+            <Button
+                android:id="@+id/EnlistedShop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:background="@color/colornew"
+                android:layout_marginTop="10dp"
+                android:text="Enlisted Shop"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                />
 
-    <Button
-        android:id="@+id/LikeFacebook"
-        android:layout_below="@id/SuggestedShop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Like Us on Facebook"/>
-    <Button
-        android:id="@+id/FollowInstagram"
-        android:layout_below="@id/LikeFacebook"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Follow Us on Instagram"/>
-    <Button
-        android:id="@+id/AboutUS"
-        android:layout_below="@id/FollowInstagram"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="About us"/>
-    <Button
-        android:id="@+id/RateUS"
-        android:layout_below="@id/AboutUS"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Rate Us"/>
-    <Button
-        android:id="@+id/TermsCondition"
-        android:layout_below="@id/RateUS"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Terms and Condition"/>
+            <Button
+                android:id="@+id/SuggestedShop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EnlistedShop"
+                android:background="@color/colornew"
+                android:layout_marginTop="10dp"
+                android:text="Suggest A Shop / Opening A Shop Request"
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
 
-    <!--<Button-->
-        <!--android:id="@+id/PrivacyPloicy"-->
-        <!--android:layout_below="@id/TermsCondition"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Privacy Policy"/>-->
+            <Button
+                android:id="@+id/LikeFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SuggestedShop"
+                android:background="@color/colornew"
+                android:layout_marginTop="10dp"
+                android:text="Like Us on Facebook"
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
 
-    <Button
-        android:id="@+id/logout"
+            <Button
+                android:id="@+id/Faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LikeFacebook"
+                android:background="@color/colornew"
+                android:layout_marginTop="10dp"
+                android:text="FAQs"
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/RateUS"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Logout" />
+            <Button
+                android:id="@+id/AboutUS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Faq"
+                android:background="@color/colornew"
+                android:layout_marginTop="10dp"
+                android:text="About us"
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
+            <!--<Button-->
+            <!--android:id="@+id/RateUS"-->
+            <!--android:layout_below="@id/AboutUS"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Rate Us"/>-->
+            <Button
+                android:id="@+id/TermsCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AboutUS"
+                android:background="@color/colornew"
+                android:layout_marginTop="10dp"
+                android:text="Terms and Condition"
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
+
+            <!--<Button-->
+            <!--android:id="@+id/PrivacyPloicy"-->
+            <!--android:layout_below="@id/TermsCondition"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Privacy Policy"/>-->
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TermsCondition"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/colornew"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
 
         </LinearLayout>
     </ScrollView>
-
-
 
 
 </RelativeLayout>
