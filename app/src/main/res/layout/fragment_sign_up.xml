@@ -3,16 +3,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpFragment"
-    android:background="@color/daamdekhi"
-    android:layout_gravity="center_vertical">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text=""
-    android:textSize="40sp"
-    android:gravity="center"
-    />
+    android:layout_gravity="center_vertical"
+    tools:context=".SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="235dp"
+            android:layout_height="121dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo1" />
+
+        <TextView
+            android:id="@+id/optext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Sign Up Form "
+            android:textAlignment="center"
+            android:textColor="@color/colornew1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Enter Your name"
+            android:paddingTop="15dp" />
+
+        <EditText
+            android:id="@+id/inputContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Enter Your Contact Number" />
+
+        <EditText
+            android:id="@+id/inputmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Enter your Mail" />
+
+        <EditText
+            android:id="@+id/inputLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Enter Your Shop Location or Web link" />
+
+        <Button
+            android:id="@+id/submitReq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colornew"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 
 </FrameLayout>

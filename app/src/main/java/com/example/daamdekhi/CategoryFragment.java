@@ -30,24 +30,15 @@ public class CategoryFragment extends Fragment {
         NestedScrollView scrollView = (NestedScrollView)view.findViewById (R.id.nest_scrollview);
         scrollView.setFillViewport (true);
         lstproduct= new ArrayList<>();
-        lstproduct.add(new product("Kid's","Categorie Book","Kid's",R.drawable.kids));
         lstproduct.add(new product("Women","Categorie Book","Description Book",R.drawable.women));
         lstproduct.add(new product("Men","Categorie Book","Description Book",R.drawable.men));
-        lstproduct.add(new product("Computer's & Camera's","Categorie Book","Description Book",R.drawable.computers));
-        lstproduct.add(new product("Home Appliance","Categorie Book","Description Book",R.drawable.home));
+        lstproduct.add(new product("Kid's","Categorie Book","Kid's",R.drawable.kid));
         lstproduct.add(new product("Gift","Categorie Book","Description Book",R.drawable.gift));
-
-        //aro 3 ta category add kora lagbe.wearable, healthcare, security system & fire safety,
-
-        lstproduct.add(new product("Computer's & Camera's","Categorie Book","Description Book",R.drawable.computers));
+        lstproduct.add(new product("Wearable Device","Categorie Book","Description Book",R.drawable.wearable));
+        lstproduct.add(new product("Health Care","Categorie Book","Description Book",R.drawable.healthcare));
         lstproduct.add(new product("Home Appliance","Categorie Book","Description Book",R.drawable.home));
-        lstproduct.add(new product("Gift","Categorie Book","Description Book",R.drawable.gift));
-
-
-
-
-
-
+        lstproduct.add(new product("Computer's & Camera's","Categorie Book","Description Book",R.drawable.computers));
+        lstproduct.add(new product("Security & Safety","Categorie Book","Description Book",R.drawable.security));
 
 
 
@@ -60,16 +51,6 @@ public class CategoryFragment extends Fragment {
         myAdapter = new RecyclerViewAdapter(getActivity(),lstproduct);
         myrv.setLayoutManager(new GridLayoutManager(getActivity(),3));
         myrv.setAdapter(myAdapter);
-
-
-
-
-
-
-
-
-
-
 
 
         return view;

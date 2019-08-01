@@ -17,6 +17,7 @@
 
         <ImageView
             android:id="@+id/productSingleImage"
+            android:contentDescription="Product Image"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="2"
@@ -29,11 +30,20 @@
             android:layout_weight="3"
             android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/productSingleMeta"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:orientation="vertical"
+            android:layout_weight="2" >
+            <TextView
+                android:id="@+id/productSingleDist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/productSingleMeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

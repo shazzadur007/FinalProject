@@ -17,7 +17,7 @@ public class FacebookActivity extends AppCompatActivity {
         setContentView(R.layout.activity_facebook);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("DaamDekhi");
+        toolbar.setTitle("Facebook Page");
         setSupportActionBar(toolbar);
 
         webView = findViewById(R.id.webfb);

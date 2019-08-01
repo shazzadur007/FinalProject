@@ -33,6 +33,7 @@ import java.net.URL;
 public class fetchProducts extends AsyncTask<Void, Void, Void> {
     private String data = "";
     private String query = "";
+    private Double distance;
     String[][] products;
     Context cont;
 
@@ -68,17 +69,19 @@ public class fetchProducts extends AsyncTask<Void, Void, Void> {
 
                 if (s.equals("ok")) {
                     JSONArray JA = (JSONArray) D.get("products");
-                    products = new String[JA.length()][7];
+                    products = new String[JA.length()][8];
                     for (int i = 0; i < JA.length(); i++) {
                         JSONObject JO = (JSONObject) JA.get(i);
                         products[i][0] = (String) JO.get("name");
-                        products[i][1] = (String) JO.get("price");
+                        products[i][1] = (String) JO.get("price") + " BDT";
                         products[i][2] = (String) JO.get("desc");
                         products[i][3] = (String) JO.get("meta");
                         products[i][4] = (String) JO.get("latitude");
                         products[i][5] = (String) JO.get("longitude");
                         products[i][6] = (String) JO.get("sellerId");
-                        distance( Double.parseDouble(products[i][4]), Double.parseDouble(products[i][5]), Double.parseDouble(products[i][4]), Double.parseDouble(products[i][5]), 'K');
+
+                        distance = distance( HomeFragment.latitude, HomeFragment.longitude, Double.parseDouble(products[i][4]), Double.parseDouble(products[i][5]), 'K');
+                        products[i][7] = String.format("%.2f", distance) + " km";
                     }
                 }
             } else {
@@ -110,8 +113,10 @@ public class fetchProducts extends AsyncTask<Void, Void, Void> {
             productsView[i] = layoutInflater.inflate(R.layout.product_search_item, null);
             TextView productName = productsView[i].findViewById(R.id.productSingleName);
             TextView productSingleMeta = productsView[i].findViewById(R.id.productSingleMeta);
+            TextView productSingleDist = productsView[i].findViewById(R.id.productSingleDist);
             productName.setText(products[i][0]);
             productSingleMeta.setText(products[i][1]);
+            productSingleDist.setText(products[i][7]);
             setOnClick(productsView[i], i);
             HomeFragment.searchResultView.addView(productsView[i]);
         }

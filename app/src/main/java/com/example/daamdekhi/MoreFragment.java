@@ -18,12 +18,12 @@ public class MoreFragment extends Fragment {
     private Button enlisted_shop;
     private Button suggested_shop;
     private Button like_facebook;
-    private Button foll0w_insta;
+    private Button faq;
+
     private Button about_us;
-    private Button rate_us;
     private Button terms_condition;
-    private Button privacy_policy;
-    private Button logout;
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -55,6 +55,30 @@ public class MoreFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getActivity(),FacebookActivity.class);
+                startActivity(intent);
+            }
+        });
+        faq=view.findViewById(R.id.Faq);
+        faq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(),FAQs.class);
+                startActivity(intent);
+            }
+        });
+        about_us=view.findViewById(R.id.AboutUS);
+        about_us.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(getActivity(),AboutUS.class);
+                startActivity(intent);
+            }
+        });
+        terms_condition=view.findViewById(R.id.TermsCondition);
+        terms_condition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(),Terms_Condition.class);
                 startActivity(intent);
             }
         });

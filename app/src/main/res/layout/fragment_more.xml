@@ -108,18 +108,7 @@
             <!--android:layout_height="wrap_content"-->
             <!--android:text="Privacy Policy"/>-->
 
-            <Button
-                android:id="@+id/logout"
-                android:layout_width="wrap_content"
 
-                android:layout_height="wrap_content"
-                android:layout_below="@id/TermsCondition"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="16dp"
-                android:background="@color/colornew"
-                android:text="Logout"
-                android:textAllCaps="false"
-                android:textSize="16sp"/>
 
         </LinearLayout>
     </ScrollView>

@@ -29,8 +29,8 @@
 
             <ImageView
                 android:id="@+id/productthumbnail"
-                android:layout_width="125dp"
-                android:layout_height="170dp"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
                 android:background="#FFFFFF"
                 android:scaleType="centerCrop" />
 

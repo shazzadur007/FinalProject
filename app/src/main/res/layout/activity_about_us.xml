@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FAQs"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    tools:context=".AboutUS">
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
@@ -31,6 +30,7 @@
             android:layout_margin="16dp"
             android:text="@string/Why_Shop"
             android:layout_gravity="end"
+
             />
 
 

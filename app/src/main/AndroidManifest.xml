@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FAQs"></activity>
+        <activity android:name=".Terms_Condition"></activity>
+        <activity android:name=".AboutUS" />
+        <activity android:name=".FAQs" />
         <activity android:name=".FacebookActivity" />
         <activity android:name=".SuggestedShop" /> <!-- android:parentActivityName=".MainActivity" -->
         <activity android:name=".EnlistedShop" /> <!-- android:parentActivityName=".MainActivity" -->
