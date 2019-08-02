@@ -41,7 +41,7 @@ public class HomeFragment extends Fragment {
 
         searchResultView = v.findViewById(R.id.searchResultView);
         searchTest = v.findViewById(R.id.searchTest);
-        if( data == null ) {
+        if( data == null || data.getString("query").equals("") ) {
             searchTest.setText("");
             fetchProducts process = new fetchProducts(this.cont, null);
             process.execute();
