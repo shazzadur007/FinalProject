@@ -19,8 +19,7 @@ public class EnlistedShop extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Our Enlisted Shop");
         setSupportActionBar(toolbar);
-//        getSupportActionBar().setDisplayShowHomeEnabled(true);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         listView = (ListView) findViewById(R.id.shopList);
 

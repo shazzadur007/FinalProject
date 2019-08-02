@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShopOwner"
     android:orientation="vertical"
-    >
+    tools:context=".ShopOwner">
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar"
-        />
+        layout="@layout/toolbar" />
 
     <ImageView
         android:id="@+id/logo"
@@ -19,38 +17,43 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:src="@drawable/logo1" />
+
     <TextView
-        android:gravity="center"
-        android:layout_margin="16dp"
+
         android:id="@+id/name"
         android:layout_width="match_parent"
-        android:layout_height="25dp" />
-    <TextView
+        android:layout_height="25dp"
         android:layout_margin="16dp"
+        android:gravity="center" />
+
+    <TextView
         android:id="@+id/phone"
         android:layout_width="match_parent"
-        android:layout_height="25dp" />
+        android:layout_height="25dp"
+        android:layout_margin="16dp" />
+
     <TextView
-        android:layout_margin="16dp"
         android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="25dp" />
+        android:layout_height="25dp"
+        android:layout_margin="16dp" />
+
     <TextView
-        android:layout_margin="16dp"
         android:id="@+id/shopname"
         android:layout_width="match_parent"
-        android:layout_height="25dp" />
+        android:layout_height="25dp"
+        android:layout_margin="16dp" />
+
     <TextView
-        android:textAlignment="center"
         android:id="@+id/situation"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
+        android:layout_height="35dp"
+        android:background="@color/verified"
         android:text="Verified Shop Owner"
+        android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textStyle="bold"
         android:textSize="25sp"
-        android:background="@color/verified"/>
-
+        android:textStyle="bold" />
 
 
 </LinearLayout>
