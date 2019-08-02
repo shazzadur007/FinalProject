@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Terms_Condition"></activity>
+        <activity android:name=".ShopOwner"></activity>
+        <activity android:name=".Terms_Condition" />
         <activity android:name=".AboutUS" />
         <activity android:name=".FAQs" />
         <activity android:name=".FacebookActivity" />

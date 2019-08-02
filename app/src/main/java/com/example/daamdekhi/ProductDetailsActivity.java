@@ -46,7 +46,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
         Intent myIntent = getIntent();
 
-        productPrice.setText("$" + myIntent.getStringExtra("ProductPrice"));
+        productPrice.setText("" + myIntent.getStringExtra("ProductPrice"));
         productDesc.setText(myIntent.getStringExtra("ProductDesc"));
         productName.setText(myIntent.getStringExtra("ProductName"));
         productMeta.setText(myIntent.getStringExtra("ProductMeta"));
