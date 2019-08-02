@@ -75,7 +75,7 @@ public class createSuggestedShop extends AsyncTask<Void, Void, Void> {
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
 
-        Toast.makeText(cont, "Shop Created. Wait for approval.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(cont, "Shop Request Created. Wait for approval.", Toast.LENGTH_LONG).show();
 
         SuggestedShop.inputshopname.setText("");
         SuggestedShop.inputname.setText("");

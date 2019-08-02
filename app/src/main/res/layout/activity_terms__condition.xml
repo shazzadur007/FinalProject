@@ -13,8 +13,9 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="235dp"
-        android:layout_height="121dp"
+        android:layout_height="110dp"
         android:layout_gravity="center"
+
         android:src="@drawable/logo1" />
 
     <ScrollView
@@ -27,11 +28,11 @@
             android:id="@+id/whydd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="@string/Why_Shop"
-            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:justificationMode="inter_word"
+            android:text="@string/terms"
 
-            />
+            android:visibility="visible" />
 
 
 
