@@ -15,20 +15,23 @@
         <ImageView
             android:id="@+id/logo"
             android:layout_width="235dp"
-            android:layout_height="121dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:src="@drawable/logo1" />
+
 
         <TextView
             android:id="@+id/optext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="12dp"
             android:text="Sign Up Form "
             android:textAlignment="center"
             android:textColor="@color/colornew1"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+
 
         <EditText
             android:id="@+id/inputname"
@@ -52,12 +55,6 @@
             android:layout_margin="20dp"
             android:hint="Enter your Mail" />
 
-        <EditText
-            android:id="@+id/inputLocation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:hint="Enter Your Shop Location or Web link" />
 
         <Button
             android:id="@+id/submitReq"
@@ -68,6 +65,7 @@
             android:text="Submit"
             android:textAllCaps="false"
             android:textSize="20sp" />
+
     </LinearLayout>
 
 

@@ -184,10 +184,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment=new ProfileFragment();
                 break;
 
-            case R.id.user_favorite:
-                fragment=new FavoriteFragment();
-                break;
-
             case R.id.user_login:
                 fragment=new LoginFragment();
                 break;

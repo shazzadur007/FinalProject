@@ -14,12 +14,7 @@
         />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Enlisted Shop"
-        android:textAlignment="center"
-        android:textSize="34sp" />
+
 
     <ListView
         android:id="@+id/shopList"
