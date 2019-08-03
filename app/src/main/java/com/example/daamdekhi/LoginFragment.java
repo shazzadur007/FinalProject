@@ -23,8 +23,6 @@ import java.security.NoSuchAlgorithmException;
 
 
 public class LoginFragment extends Fragment {
-
-
     private Button login;
     private Button Signup;
     private SignUpFragment signUpFragment;

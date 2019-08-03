@@ -35,7 +35,7 @@ public class SignUpFragment extends Fragment {
         Latitude = MainActivity.latitude;
         Longitude = MainActivity.longitude;
 
-        createUser process = new createUser(cont);
+        createUser process = new createUser(MainActivity.cont);
         process.execute();
     }
     @Override

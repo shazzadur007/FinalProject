@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private LocationManager locationManager;
     public static double longitude, latitude;
     MaterialSearchView searchView;
+    public static Context cont;
 
     public static String[][] products = new String[][]{
             {"Rice in Dhaka", "Small desc", "100", "image.jpg"},
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        cont = this;
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
