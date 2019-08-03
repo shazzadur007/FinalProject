@@ -23,23 +23,24 @@ public class SignUpFragment extends Fragment {
     private Context cont;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        Username = container.findViewById(R.id.registerusername);
-        Password = container.findViewById(R.id.registerpassword);
-        Name = container.findViewById(R.id.registername);
-        Nid = container.findViewById(R.id.registernid);
-        Address = container.findViewById(R.id.registeraddress);
-        Phone = container.findViewById(R.id.registerphone);
-        Email = container.findViewById(R.id.registeremail);
-
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        Username = view.findViewById(R.id.registerusername);
+        Password = view.findViewById(R.id.registerpassword);
+        Name = view.findViewById(R.id.registername);
+        Nid = view.findViewById(R.id.registernid);
+        Address = view.findViewById(R.id.registeraddress);
+        Phone = view.findViewById(R.id.registerphone);
+        Email = view.findViewById(R.id.registeremail);
 
         Latitude = MainActivity.latitude;
         Longitude = MainActivity.longitude;
 
         createUser process = new createUser(cont);
         process.execute();
-        
+    }
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_sign_up, container, false);
     }
