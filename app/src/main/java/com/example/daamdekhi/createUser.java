@@ -63,7 +63,7 @@ public class createUser extends AsyncTask<Void, Void, Void> {
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
 
-        Toast.makeText(cont, "User Created.", Toast.LENGTH_LONG).show();
+        Toast.makeText(cont, "User Created", Toast.LENGTH_LONG).show();
 
         SignUpFragment.Username.setText("");
         SignUpFragment.Password.setText("");
