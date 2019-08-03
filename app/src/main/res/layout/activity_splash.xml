@@ -21,11 +21,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginRight="23dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
         android:padding="10dp"
         android:scaleType="centerInside"
         android:src="@drawable/logo1" />
@@ -43,11 +43,36 @@
         android:layout_alignParentBottom="false"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="450dp"
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
         android:layout_marginBottom="80dp"
         android:progressBackgroundTint="#B1B0B0"
         android:progressTint="#F9BB41" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/pwd"
+        android:layout_below="@+id/progressBarId"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Powered By"
+        />
+
+    <ImageView
+
+        android:id="@+id/bvcllogo"
+        android:layout_width="193dp"
+        android:layout_height="109dp"
+        android:layout_below="@id/pwd"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="531dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:src="@drawable/bvcl" />
+
 
 </RelativeLayout>
