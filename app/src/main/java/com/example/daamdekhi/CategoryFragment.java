@@ -30,15 +30,15 @@ public class CategoryFragment extends Fragment {
         NestedScrollView scrollView = (NestedScrollView)view.findViewById (R.id.nest_scrollview);
         scrollView.setFillViewport (true);
         lstproduct= new ArrayList<>();
-        lstproduct.add(new product("Women","Categorie Book","Description Book",R.drawable.women));
-        lstproduct.add(new product("Men","Categorie Book","Description Book",R.drawable.men));
-        lstproduct.add(new product("Kid's","Categorie Book","Kid's",R.drawable.kid));
-        lstproduct.add(new product("Gift","Categorie Book","Description Book",R.drawable.gift));
-        lstproduct.add(new product("Wearable Device","Categorie Book","Description Book",R.drawable.wearable));
-        lstproduct.add(new product("Health Care","Categorie Book","Description Book",R.drawable.healthcare));
-        lstproduct.add(new product("Home Appliance","Categorie Book","Description Book",R.drawable.home));
-        lstproduct.add(new product("Computer's & Camera's","Categorie Book","Description Book",R.drawable.computers));
-        lstproduct.add(new product("Security & Safety","Categorie Book","Description Book",R.drawable.security));
+        lstproduct.add(new product("Women","Category","Description",R.drawable.women));
+        lstproduct.add(new product("Men","Category","Description",R.drawable.men));
+        lstproduct.add(new product("Kid's","Category ","Description",R.drawable.kid));
+        lstproduct.add(new product("Gift","Category","Description",R.drawable.gift));
+        lstproduct.add(new product("Wearable Device","Category","Description",R.drawable.wearable));
+        lstproduct.add(new product("Health Care","Category","Description",R.drawable.healthcare));
+        lstproduct.add(new product("Home Appliance","Category","Description",R.drawable.home));
+        lstproduct.add(new product("Computer's & Camera's","Category ","Description",R.drawable.computers));
+        lstproduct.add(new product("Security & Safety","Category","Description",R.drawable.security));
 
 
 
