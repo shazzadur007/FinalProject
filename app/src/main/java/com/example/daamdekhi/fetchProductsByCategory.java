@@ -104,6 +104,17 @@ public class fetchProductsByCategory extends AsyncTask<Void, Void, Void> {
         ProductActivity.searchResultView.invalidate();
         View[] productsView = ProductActivity.productsView;
         LayoutInflater layoutInflater = (LayoutInflater) cont.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        for (int i=0; i<products.length; i++ ) {
+            productsView[i] = layoutInflater.inflate(R.layout.product_search_item, null);
+            TextView productName = productsView[i].findViewById(R.id.productSingleName);
+            TextView productSingleMeta = productsView[i].findViewById(R.id.productSingleMeta);
+            TextView productSingleDist = productsView[i].findViewById(R.id.productSingleDist);
+            productName.setText(products[i][0]);
+            productSingleMeta.setText(products[i][1]);
+            productSingleDist.setText(products[i][7]);
+            setOnClick(productsView[i], i);
+            ProductActivity.searchResultView.addView(productsView[i]);
+        }
         ProductActivity.searchResultView.invalidate();
     }
 
