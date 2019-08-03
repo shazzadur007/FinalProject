@@ -21,7 +21,7 @@ import android.widget.TextView;
 
 public class HomeFragment extends Fragment {
     public static String[][] products = new String[1][4];
-    public static View[] productsView = new View[3];
+    public static View[] productsView = new View[10];
     public static LinearLayout searchResultView;
     public static TextView searchTest;
     Context cont;

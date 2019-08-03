@@ -34,11 +34,11 @@ public class CategoryFragment extends Fragment {
         lstproduct.add(new product("Men","Category","Description",R.drawable.men));
         lstproduct.add(new product("Kid's","Category ","Description",R.drawable.kid));
         lstproduct.add(new product("Gift","Category","Description",R.drawable.gift));
-        lstproduct.add(new product("Wearable Device","Category","Description",R.drawable.wearable));
-        lstproduct.add(new product("Health Care","Category","Description",R.drawable.healthcare));
+        //lstproduct.add(new product("Wearable Device","Category","Description",R.drawable.wearable));
+        //lstproduct.add(new product("Health Care","Category","Description",R.drawable.healthcare));
         lstproduct.add(new product("Home Appliance","Category","Description",R.drawable.home));
         lstproduct.add(new product("Computer's & Camera's","Category ","Description",R.drawable.computers));
-        lstproduct.add(new product("Security & Safety","Category","Description",R.drawable.security));
+        //lstproduct.add(new product("Security & Safety","Category","Description",R.drawable.security));
 
 
 
