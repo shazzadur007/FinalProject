@@ -35,23 +35,23 @@ public class ProductActivity extends AppCompatActivity {
 
 
         tvtitle=(TextView)findViewById(R.id.txttitle);
-        tvdescription=(TextView)findViewById(R.id.txtdesc);
-        tvCategory=(TextView)findViewById(R.id.txtCat);
+//        tvdescription=(TextView)findViewById(R.id.txtdesc);
+//        tvCategory=(TextView)findViewById(R.id.txtCat);
         img=(ImageView)findViewById(R.id.productthumbnail);
 
         //Recive data
 
         Intent intent=getIntent();
         String Title=intent.getExtras().getString("Title");
-        String category=intent.getExtras().getString("Category");
-        String Description=intent.getExtras().getString("Description");
+//        String category=intent.getExtras().getString("Category");
+//        String Description=intent.getExtras().getString("Description");
         int image =intent.getExtras().getInt("Thumbnail");
 
         //setting values
 
         tvtitle.setText(Title);
-        tvCategory.setText(category);
-        tvdescription.setText(Description);
+//        tvCategory.setText(category);
+//        tvdescription.setText(Description);
         img.setImageResource(image);
 
 

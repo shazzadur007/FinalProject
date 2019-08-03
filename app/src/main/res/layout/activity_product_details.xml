@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/productphoto" />
+                app:srcCompat="@drawable/pr" />
 
         </LinearLayout>
 
@@ -131,7 +131,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Availability"
+                    android:text="Category"
                     android:textColor="#9da6a5" />
 
                 <TextView

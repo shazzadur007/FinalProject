@@ -21,14 +21,14 @@
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="2"
-            android:src="@drawable/productphoto" />
+            android:src="@drawable/pr" />
 
         <TextView
             android:id="@+id/productSingleName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:textSize="24sp" />
+            android:textSize="19sp" />
 
         <LinearLayout
             android:layout_width="0dp"

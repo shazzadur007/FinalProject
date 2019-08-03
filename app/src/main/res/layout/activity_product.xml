@@ -40,26 +40,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Product Title"
-
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/txtCat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="#edecec"
-                android:padding="8dp"
-                android:text="Category" />
+            <!--<TextView-->
+                <!--android:id="@+id/txtCat"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="#edecec"-->
+                <!--android:padding="8dp"-->
+                <!--android:text="Category" />-->
 
-            <TextView
-                android:id="@+id/txtdesc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Description"
-                android:textSize="18sp" />
+            <!--<TextView-->
+                <!--android:id="@+id/txtdesc"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Description"-->
+                <!--android:textSize="18sp" />-->
 
             <LinearLayout
                 android:id="@+id/searchResultView"
