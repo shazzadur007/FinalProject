@@ -57,7 +57,7 @@ public class ProductActivity extends AppCompatActivity {
 
         searchResultView = findViewById(R.id.searchResultView);
 
-        fetchProductsByCategory process = new fetchProductsByCategory(this, Title);
+        fetchProductsByCategory process = new fetchProductsByCategory(this, Title.toLowerCase());
         process.execute();
     }
 }
