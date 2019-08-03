@@ -37,29 +37,29 @@
                 android:id="@+id/registerusername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_margin="16dp"
                 android:hint="Enter Your Username"
-                android:paddingTop="15dp" />
+                 />
 
             <EditText
                 android:id="@+id/registerpassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="16dp"
                 android:hint="Enter Your Password" />
 
             <EditText
                 android:id="@+id/registername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_margin="16dp"
                 android:hint="Enter your Name" />
 
             <EditText
                 android:id="@+id/registernid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_margin="16dp"
                 android:hint="Enter Your National ID"
                 android:paddingTop="15dp" />
 
@@ -67,21 +67,21 @@
                 android:id="@+id/registeraddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_margin="16dp"
                 android:hint="Enter Your Address" />
 
             <EditText
                 android:id="@+id/registerphone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_margin="16dp"
                 android:hint="Enter Your Contact Number" />
 
             <EditText
                 android:id="@+id/registeremail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_margin="16dp"
                 android:hint="Enter your Email" />
 
 
@@ -89,7 +89,7 @@
                 android:id="@+id/submitReq"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_margin="16dp"
                 android:text="Submit"
                 android:textAllCaps="false"
                 android:textSize="20sp" />
