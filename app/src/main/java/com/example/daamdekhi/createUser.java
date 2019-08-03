@@ -34,7 +34,7 @@ public class createUser extends AsyncTask<Void, Void, Void> {
             String Phone =  SignUpFragment.Phone.getText().toString();
             String Email =  SignUpFragment.Email.getText().toString();
 
-            String u = "https://daamdekhi.com/api/user/create.php?userid="+Username+"&password="+Password+"&name="+Name+"&nid="+Nid+"&address="+Address+"&latitude=23&longitude=90&phoneno="+Phone+"&email="+Email+"";
+            String u = "https://daamdekhi.com/api/user/create.php?userid="+Username+"&password="+Password+"&name="+Name+"&nid="+Nid+"&address="+Address+"&latitude="+ MainActivity.latitude +"&longitude="+ MainActivity.longitude +"&phoneno="+Phone+"&email="+Email+"";
             URL url = new URL(u);
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setRequestMethod("GET");
