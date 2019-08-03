@@ -7,13 +7,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class ProductActivity extends AppCompatActivity {
 
     private TextView tvtitle,tvdescription,tvCategory;
     private ImageView img;
+
+    public static LinearLayout searchResultView;
+    public static String[][] products = new String[1][4];
+    public static View[] productsView = new View[10];
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +30,6 @@ public class ProductActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
 
 
@@ -47,5 +53,11 @@ public class ProductActivity extends AppCompatActivity {
         tvCategory.setText(category);
         tvdescription.setText(Description);
         img.setImageResource(image);
+
+
+        searchResultView = findViewById(R.id.searchResultView);
+
+        fetchProductsByCategory process = new fetchProductsByCategory(this, Title);
+        process.execute();
     }
 }

@@ -1,28 +1,10 @@
 package com.example.daamdekhi;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.LinearLayout;
-
-public class product extends AppCompatActivity {
+public class product {
     private String Title;
     private  String Category;
     private String Description;
     private int Thumbnail;
-    public static LinearLayout searchResultView;
-    public static String[][] products = new String[1][4];
-    public static View[] productsView = new View[10];
-
-
-
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        searchResultView = findViewById(R.id.searchResultView);
-
-        fetchProductsByCategory process = new fetchProductsByCategory(this, Title);
-        process.execute();
-    }
 
     public product(String title, String category, String description, int thumbnail) {
         Title = title;
@@ -31,9 +13,9 @@ public class product extends AppCompatActivity {
         Thumbnail = thumbnail;
     }
 
-//    public String getTitle() {
-//        return Title;
-//    }
+    public String getTitle() {
+        return Title;
+    }
 
     public String getCategory() {
         return Category;

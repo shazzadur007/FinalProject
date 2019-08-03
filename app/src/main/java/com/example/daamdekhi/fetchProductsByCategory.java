@@ -99,12 +99,12 @@ public class fetchProductsByCategory extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        product.products = products;
-        product.searchResultView.removeAllViews();
-        product.searchResultView.invalidate();
-        View[] productsView = product.productsView;
+        ProductActivity.products = products;
+        ProductActivity.searchResultView.removeAllViews();
+        ProductActivity.searchResultView.invalidate();
+        View[] productsView = ProductActivity.productsView;
         LayoutInflater layoutInflater = (LayoutInflater) cont.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        product.searchResultView.invalidate();
+        ProductActivity.searchResultView.invalidate();
     }
 
 
